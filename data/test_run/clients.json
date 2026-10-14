@@ -1,0 +1,74 @@
+[
+  {
+    "id": "client_acme_corp",
+    "name": "Acme Finserve Pvt Ltd",
+    "pan": "AABCA1234F",
+    "gstin": "27AABCA1234F1Z5",
+    "dob": "2015-04-12",
+    "portalUsernameIncomeTax": "ACME_IT_2026",
+    "portalUsernameGst": "27AABCA1234F1Z5",
+    "enabledPortals": [
+      "INCOME_TAX",
+      "GST"
+    ],
+    "documentPreferences": [
+      "AIS",
+      "TIS",
+      "26AS",
+      "ITR_V",
+      "GSTR_1",
+      "GSTR_3B"
+    ],
+    "inputDirectory": "data/clients/client_acme_corp/inputs",
+    "outputDirectory": "data/clients/client_acme_corp/outputs",
+    "downloadDirectory": "data/clients/client_acme_corp/downloads",
+    "archived": false,
+    "createdAt": "2026-01-10T00:00:00.000Z",
+    "updatedAt": "2026-10-14T08:12:33.373Z"
+  },
+  {
+    "id": "client_textiles",
+    "name": "Shri Ramakrishna Textiles",
+    "pan": "BBKPR5678M",
+    "gstin": "33BBKPR5678M1Z8",
+    "dob": "2008-09-22",
+    "portalUsernameIncomeTax": "RAMAKRISHNA_TEX",
+    "portalUsernameGst": "33BBKPR5678M1Z8",
+    "enabledPortals": [
+      "GST"
+    ],
+    "documentPreferences": [
+      "GSTR_1",
+      "GSTR_3B"
+    ],
+    "inputDirectory": "data/clients/client_textiles/inputs",
+    "outputDirectory": "data/clients/client_textiles/outputs",
+    "downloadDirectory": "data/clients/client_textiles/downloads",
+    "archived": false,
+    "createdAt": "2026-02-01T00:00:00.000Z",
+    "updatedAt": "2026-10-14T08:12:33.373Z"
+  },
+  {
+    "id": "client_dr_murthy",
+    "name": "Dr. Aruna V. Murthy",
+    "pan": "ARUPM9876C",
+    "gstin": "",
+    "dob": "1974-11-05",
+    "portalUsernameIncomeTax": "ARUPM9876C",
+    "enabledPortals": [
+      "INCOME_TAX"
+    ],
+    "documentPreferences": [
+      "AIS",
+      "TIS",
+      "26AS",
+      "ITR_V"
+    ],
+    "inputDirectory": "data/clients/client_dr_murthy/inputs",
+    "outputDirectory": "data/clients/client_dr_murthy/outputs",
+    "downloadDirectory": "data/clients/client_dr_murthy/downloads",
+    "archived": false,
+    "createdAt": "2026-03-15T00:00:00.000Z",
+    "updatedAt": "2026-10-14T08:12:33.373Z"
+  }
+]

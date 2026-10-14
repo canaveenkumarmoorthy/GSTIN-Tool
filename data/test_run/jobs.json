@@ -1,0 +1,315 @@
+[
+  {
+    "id": "job_1791965553646_adxke",
+    "type": "SUMMARY_PREPARER",
+    "clientId": "client_acme_corp",
+    "clientName": "Acme Finserve Pvt Ltd",
+    "status": "COMPLETED",
+    "mode": "DEMO",
+    "documentsRequested": [],
+    "documentsCompleted": [],
+    "progress": 100,
+    "currentStepMessage": "Zero-loss summary preparation finished. Generated 3 output artifact(s).",
+    "logs": [
+      {
+        "timestamp": "2026-10-14T08:12:33.646Z",
+        "level": "info",
+        "message": "Job initialized [Mode: DEMO]. Client: Acme Finserve Pvt Ltd (client_acme_corp)",
+        "simulated": true
+      },
+      {
+        "timestamp": "2026-10-14T08:12:33.647Z",
+        "level": "info",
+        "message": "[OFFLINE PIPELINE] Scanning client input folder: data/clients/client_acme_corp/inputs",
+        "simulated": true
+      },
+      {
+        "timestamp": "2026-10-14T08:12:33.648Z",
+        "level": "info",
+        "message": "Found 4 file(s) in input directory.",
+        "simulated": true
+      },
+      {
+        "timestamp": "2026-10-14T08:12:33.648Z",
+        "level": "info",
+        "message": "[PROCESSING] Analyzing workbook: fy2025_26_sales_ledger_raw.xlsx",
+        "simulated": true
+      },
+      {
+        "timestamp": "2026-10-14T08:12:33.670Z",
+        "level": "success",
+        "message": "[COMPLETED FILE] fy2025_26_sales_ledger_raw.xlsx: Pruned 2 blank row(s), preserved 4 non-blank row(s) [Zeros preserved: 2, Formulas: 3].",
+        "simulated": true
+      },
+      {
+        "timestamp": "2026-10-14T08:12:33.671Z",
+        "level": "info",
+        "message": "[PROCESSING] Analyzing workbook: gstr2b_purchase_raw.csv",
+        "simulated": true
+      },
+      {
+        "timestamp": "2026-10-14T08:12:33.698Z",
+        "level": "success",
+        "message": "[COMPLETED FILE] gstr2b_purchase_raw.csv: Pruned 2 blank row(s), preserved 4 non-blank row(s) [Zeros preserved: 7, Formulas: 0].",
+        "simulated": true
+      },
+      {
+        "timestamp": "2026-10-14T08:12:33.698Z",
+        "level": "warn",
+        "message": "[FORMAT NOTICE] legacy_ledger.xls: Legacy .xls format detected. Left untouched to prevent corruption.",
+        "simulated": true
+      },
+      {
+        "timestamp": "2026-10-14T08:12:33.698Z",
+        "level": "warn",
+        "message": "[FORMAT NOTICE] legacy_tally_dump_2021.xls: Legacy .xls format detected. Left untouched to prevent corruption.",
+        "simulated": true
+      },
+      {
+        "timestamp": "2026-10-14T08:12:33.699Z",
+        "level": "success",
+        "message": "[PIPELINE FINISHED] Summary audit complete. 8 row(s) preserved with zero data loss. Manifest written to manifest_1791965553698.json.",
+        "simulated": true
+      }
+    ],
+    "outputFiles": [
+      "data/clients/client_acme_corp/outputs/fy2025_26_sales_ledger_raw_audit_summary_1791965553660.xlsx",
+      "data/clients/client_acme_corp/outputs/gstr2b_purchase_raw_audit_summary_1791965553685.xlsx",
+      "data/clients/client_acme_corp/outputs/manifest_1791965553698.json"
+    ],
+    "createdAt": "2026-10-14T08:12:33.646Z",
+    "startedAt": "2026-10-14T08:12:33.647Z",
+    "manifest": {
+      "runTimestamp": "2026-10-14T08:12:33.648Z",
+      "clientId": "client_acme_corp",
+      "clientName": "Acme Finserve Pvt Ltd",
+      "processingPolicy": "Zero-Loss Dynamic Filtering",
+      "options": {
+        "pruneEmptyRows": true,
+        "pruneEmptyColumns": false
+      },
+      "filesProcessed": [
+        {
+          "sourceFile": "fy2025_26_sales_ledger_raw.xlsx",
+          "outputWorkbookPath": "/app/applet/data/clients/client_acme_corp/outputs/fy2025_26_sales_ledger_raw_audit_summary_1791965553660.xlsx",
+          "totalInputRows": 6,
+          "blankRowsRemoved": 2,
+          "preservedRows": 4,
+          "zeroValuesPreserved": 2,
+          "booleanFalsePreserved": 0,
+          "formulasPreserved": 3,
+          "datesPreserved": 3,
+          "taxIdentifiersPreserved": 3,
+          "sheets": [
+            {
+              "sheetName": "Sales Ledger",
+              "inputRows": 6,
+              "blankRowsPruned": 2,
+              "preservedRows": 4
+            }
+          ]
+        },
+        {
+          "sourceFile": "gstr2b_purchase_raw.csv",
+          "outputWorkbookPath": "/app/applet/data/clients/client_acme_corp/outputs/gstr2b_purchase_raw_audit_summary_1791965553685.xlsx",
+          "totalInputRows": 6,
+          "blankRowsRemoved": 2,
+          "preservedRows": 4,
+          "zeroValuesPreserved": 7,
+          "booleanFalsePreserved": 0,
+          "formulasPreserved": 0,
+          "datesPreserved": 3,
+          "taxIdentifiersPreserved": 3,
+          "sheets": [
+            {
+              "sheetName": "sheet1",
+              "inputRows": 6,
+              "blankRowsPruned": 2,
+              "preservedRows": 4
+            }
+          ]
+        }
+      ],
+      "unsupportedFiles": [
+        {
+          "filename": "legacy_ledger.xls",
+          "path": "data/clients/client_acme_corp/inputs/legacy_ledger.xls",
+          "reason": "Legacy BIFF8 .xls format is not supported by ExcelJS without conversion. Source file preserved without modification.",
+          "actionTaken": "PRESERVED_UNMODIFIED"
+        },
+        {
+          "filename": "legacy_tally_dump_2021.xls",
+          "path": "data/clients/client_acme_corp/inputs/legacy_tally_dump_2021.xls",
+          "reason": "Legacy BIFF8 .xls format is not supported by ExcelJS without conversion. Source file preserved without modification.",
+          "actionTaken": "PRESERVED_UNMODIFIED"
+        }
+      ],
+      "totals": {
+        "totalFilesScanned": 4,
+        "totalInputRows": 12,
+        "blankRowsRemoved": 4,
+        "preservedRows": 8,
+        "zeroValuesPreserved": 9,
+        "booleanFalsePreserved": 0,
+        "formulasPreserved": 3,
+        "datesPreserved": 6,
+        "taxIdentifiersPreserved": 6
+      }
+    },
+    "completedAt": "2026-10-14T08:12:33.699Z"
+  },
+  {
+    "id": "job_1791965553699_acb97",
+    "type": "DOWNLOADER",
+    "clientId": "client_lock_test",
+    "clientName": "Lock Test Client",
+    "status": "COMPLETED",
+    "mode": "DEMO",
+    "documentsRequested": [],
+    "documentsCompleted": [],
+    "progress": 0,
+    "currentStepMessage": "Job queued and awaiting execution dispatcher",
+    "logs": [
+      {
+        "timestamp": "2026-10-14T08:12:33.700Z",
+        "level": "info",
+        "message": "Job initialized [Mode: DEMO]. Client: Lock Test Client (client_lock_test)",
+        "simulated": true
+      }
+    ],
+    "outputFiles": [],
+    "createdAt": "2026-10-14T08:12:33.700Z",
+    "completedAt": "2026-10-14T08:12:33.700Z"
+  },
+  {
+    "id": "job_1791965553700_2xes0",
+    "type": "SUMMARY_PREPARER",
+    "clientId": "client_lock_test",
+    "clientName": "Lock Test Client",
+    "status": "INTERRUPTED",
+    "mode": "DEMO",
+    "documentsRequested": [],
+    "documentsCompleted": [],
+    "progress": 0,
+    "currentStepMessage": "Job queued and awaiting execution dispatcher",
+    "logs": [
+      {
+        "timestamp": "2026-10-14T08:12:33.700Z",
+        "level": "info",
+        "message": "Job initialized [Mode: DEMO]. Client: Lock Test Client (client_lock_test)",
+        "simulated": true
+      },
+      {
+        "timestamp": "2026-10-14T08:12:33.700Z",
+        "level": "warn",
+        "message": "[SYSTEM] Server restart detected. In-flight job marked INTERRUPTED."
+      }
+    ],
+    "outputFiles": [],
+    "createdAt": "2026-10-14T08:12:33.700Z",
+    "error": "Job interrupted by server restart. Use Retry to re-run safely."
+  },
+  {
+    "id": "job_1791965553700_9cxa8",
+    "type": "DOWNLOADER",
+    "clientId": "restart_client",
+    "clientName": "Restart Client",
+    "status": "INTERRUPTED",
+    "mode": "DEMO",
+    "documentsRequested": [],
+    "documentsCompleted": [],
+    "progress": 0,
+    "currentStepMessage": "Job queued and awaiting execution dispatcher",
+    "logs": [
+      {
+        "timestamp": "2026-10-14T08:12:33.700Z",
+        "level": "info",
+        "message": "Job initialized [Mode: DEMO]. Client: Restart Client (restart_client)",
+        "simulated": true
+      },
+      {
+        "timestamp": "2026-10-14T08:12:33.701Z",
+        "level": "warn",
+        "message": "[SYSTEM] Server restart detected. In-flight job marked INTERRUPTED."
+      }
+    ],
+    "outputFiles": [],
+    "createdAt": "2026-10-14T08:12:33.700Z",
+    "startedAt": "2026-10-14T08:12:33.700Z",
+    "error": "Job interrupted by server restart. Use Retry to re-run safely."
+  },
+  {
+    "id": "job_1791965553789_wed38",
+    "type": "DOWNLOADER",
+    "clientId": "client_acme_corp",
+    "clientName": "Acme Finserve Pvt Ltd",
+    "status": "FAILED",
+    "mode": "REAL",
+    "documentsRequested": [],
+    "documentsCompleted": [],
+    "progress": 0,
+    "currentStepMessage": "Failed: 1_downloader.js missing",
+    "logs": [
+      {
+        "timestamp": "2026-10-14T08:12:33.789Z",
+        "level": "info",
+        "message": "Job initialized [Mode: REAL]. Client: Acme Finserve Pvt Ltd (client_acme_corp)",
+        "simulated": false
+      },
+      {
+        "timestamp": "2026-10-14T08:12:33.790Z",
+        "level": "info",
+        "message": "[REAL MODE] Inspecting integration script at: /app/applet/1_downloader.js",
+        "simulated": false
+      },
+      {
+        "timestamp": "2026-10-14T08:12:33.790Z",
+        "level": "error",
+        "message": "[REAL MODE FAILURE] REAL mode error: 1_downloader.js is not present in the application root directory. Place your Playwright automation script at the project root or switch to DEMO mode.",
+        "simulated": false
+      }
+    ],
+    "outputFiles": [],
+    "createdAt": "2026-10-14T08:12:33.789Z",
+    "startedAt": "2026-10-14T08:12:33.789Z",
+    "error": "REAL mode error: 1_downloader.js is not present in the application root directory. Place your Playwright automation script at the project root or switch to DEMO mode.",
+    "completedAt": "2026-10-14T08:12:33.790Z"
+  },
+  {
+    "id": "job_1791965553790_pgptt",
+    "type": "SUMMARY_PREPARER",
+    "clientId": "client_acme_corp",
+    "clientName": "Acme Finserve Pvt Ltd",
+    "status": "FAILED",
+    "mode": "REAL",
+    "documentsRequested": [],
+    "documentsCompleted": [],
+    "progress": 0,
+    "currentStepMessage": "Failed: 2_summary_preparer.js missing",
+    "logs": [
+      {
+        "timestamp": "2026-10-14T08:12:33.790Z",
+        "level": "info",
+        "message": "Job initialized [Mode: REAL]. Client: Acme Finserve Pvt Ltd (client_acme_corp)",
+        "simulated": false
+      },
+      {
+        "timestamp": "2026-10-14T08:12:33.790Z",
+        "level": "info",
+        "message": "[REAL MODE] Checking ExcelJS summary script at: /app/applet/2_summary_preparer.js",
+        "simulated": false
+      },
+      {
+        "timestamp": "2026-10-14T08:12:33.790Z",
+        "level": "error",
+        "message": "[REAL MODE FAILURE] REAL mode error: 2_summary_preparer.js is not present in the application root directory. Place your ExcelJS script at the project root or switch to DEMO mode.",
+        "simulated": false
+      }
+    ],
+    "outputFiles": [],
+    "createdAt": "2026-10-14T08:12:33.790Z",
+    "startedAt": "2026-10-14T08:12:33.790Z",
+    "error": "REAL mode error: 2_summary_preparer.js is not present in the application root directory. Place your ExcelJS script at the project root or switch to DEMO mode.",
+    "completedAt": "2026-10-14T08:12:33.790Z"
+  }
+]

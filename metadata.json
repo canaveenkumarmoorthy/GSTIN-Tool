@@ -1,0 +1,6 @@
+{
+  "name": "Tax & GST Automation Suite",
+  "description": "Desktop-first automation and offline financial analytics platform for Chartered Accountants coordinating Playwright extraction and ExcelJS zero-loss ledger audit preparation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

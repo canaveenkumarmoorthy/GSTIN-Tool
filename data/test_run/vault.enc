@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "salt": "746573745f73616c745f313233",
+  "entries": {
+    "client_001:income_tax": {
+      "clientId": "client_001",
+      "portal": "income_tax",
+      "username": "user_john",
+      "iv": "ffe00fe6a0e509d4cc963d8d77370b0e",
+      "authTag": "fbefc07d253f9e4cbcb7947f36ffcb97",
+      "ciphertext": "f6ee64c6008857410af3411bd82c347a6edbe246",
+      "ref": "ref_091ad567",
+      "updatedAt": "2026-10-14T08:12:33.291Z"
+    },
+    "client_acme_corp:income_tax": {
+      "clientId": "client_acme_corp",
+      "portal": "income_tax",
+      "username": "ACME_IT_2026",
+      "iv": "a26cc15e0347531a9297a3bee9a50372",
+      "authTag": "612e804ee76a3a178f1db2e5a5fecd31",
+      "ciphertext": "81f3e539828135aa1f5383650306763167f426",
+      "ref": "ref_c25ecd4c",
+      "updatedAt": "2026-10-14T08:12:33.373Z"
+    },
+    "client_acme_corp:gst": {
+      "clientId": "client_acme_corp",
+      "portal": "gst",
+      "username": "27AABCA1234F1Z5",
+      "iv": "890334b6024a2fec174ba7f0e6371562",
+      "authTag": "e5c87013183884fb5c8fef3de3d5ca92",
+      "ciphertext": "d65167a66774a4300264cf02ee556d2f4e858a",
+      "ref": "ref_eb8de4b4",
+      "updatedAt": "2026-10-14T08:12:33.373Z"
+    },
+    "client_textiles:income_tax": {
+      "clientId": "client_textiles",
+      "portal": "income_tax",
+      "username": "RAMAKRISHNA_TEX",
+      "iv": "1ec224542766851af4ef7a054814d553",
+      "authTag": "1967cf3162c4e189ef6c3afbbb08a161",
+      "ciphertext": "7c834ecdd65896ebcd3c85b6c5a4abbb95c7b6",
+      "ref": "ref_dd762900",
+      "updatedAt": "2026-10-14T08:12:33.374Z"
+    },
+    "client_textiles:gst": {
+      "clientId": "client_textiles",
+      "portal": "gst",
+      "username": "33BBKPR5678M1Z8",
+      "iv": "ab630e56f432de9ff583980af2b7db47",
+      "authTag": "5530640f0112d0eedd883f7f2580e6a0",
+      "ciphertext": "87c5f400e4faccb29d6b60e7077594c84dab74",
+      "ref": "ref_76851ba9",
+      "updatedAt": "2026-10-14T08:12:33.374Z"
+    },
+    "client_dr_murthy:income_tax": {
+      "clientId": "client_dr_murthy",
+      "portal": "income_tax",
+      "username": "ARUPM9876C",
+      "iv": "12fb4d07c7ac751d4a96a410fe729e59",
+      "authTag": "36e2bba33f14d5c6cb960976c28104dd",
+      "ciphertext": "f9532d1ddc30523c19496b0864659d0d90d844",
+      "ref": "ref_7a8f6629",
+      "updatedAt": "2026-10-14T08:12:33.374Z"
+    }
+  }
+}
